@@ -1,0 +1,93 @@
+# =============================================================================
+# 🛡 GITIGNORE — СК «Аббакумово» AI-Bot + Widget
+# =============================================================================
+
+# 🔐 Секреты и конфиги (НИКОГДА не коммитить!)
+.env
+.env.local
+.env.*.local
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 🌐 Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# 🗄 Базы данных и бэкапы
+*.db
+*.sqlite
+*.sqlite3
+backup_*.db
+*.bak
+dump.sql
+*.dump
+
+# 🪵 Логи
+*.log
+logs/
+log/
+
+# 🖥 IDE и ОС
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 🌐 Ngrok и туннели
+ngrok
+ngrok.exe
+.ngrok/
+*.ngrok.io
+*.ngrok-free.app
+
+# 📦 Сборка и кэш
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# 📁 Временные файлы
+tmp/
+temp/
+*.tmp
+*.temp
