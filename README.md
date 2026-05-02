@@ -213,4 +213,5 @@ curl https://api.твой-домен.рф/health
 **🤝 Contributing:** Pull requests welcome!  
 **📄 License:** MIT
 ```
+
 ---
