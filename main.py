@@ -25,8 +25,6 @@ storage = MemoryStorage()
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(storage=storage)
 
-ADMIN_ID = 6748604325
-
 keyboard_request_contact = ReplyKeyboardMarkup(
     keyboard=[[KeyboardButton(text="📱 Поделиться контактом", request_contact=True)]],
     resize_keyboard=True,
