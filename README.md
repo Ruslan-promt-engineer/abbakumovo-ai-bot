@@ -51,7 +51,6 @@
 
 ## 📁 Структура проекта
 
-
 ```
 abbakumovo-ai-bot/
 ├── .env.example          # Шаблон переменных окружения
@@ -124,7 +123,7 @@ curl -X POST http://127.0.0.1:8001/api/widget/chat \
 # /generate_post Тема: "Техработы 15 мая" → ИИ создаёт текст поста
 
 # 4. Проверка здоровья:
-curl http://localhost:8001/health  # → "OK"
+curl http://localhost:8001/health
 ```
 
 ---
@@ -157,13 +156,11 @@ cd abbakumovo-ai-bot
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env  # и заполни
+cp .env.example .env
 
-# Настрой systemd-сервисы (примеры в deploy/)
+# Настрой systemd-сервисы
 sudo systemctl enable abbakumovo-bot abbakumovo-widget
 sudo systemctl start abbakumovo-bot abbakumovo-widget
-
-# Nginx конфиг (reverse proxy на порт 8001) + Certbot для HTTPS
 ```
 
 ### Проверка после деплоя:
@@ -192,25 +189,22 @@ curl https://api.твой-домен.рф/health
 
 ## 🛠 Планы развития
 
-- [ ] Интеграция с CRM (Bitrix24 / AmoCRM) для автоматического создания сделок
-- [ ] Панель администратора с аналитикой (графики, воронка, статистика рассылок)
-- [ ] Шедулер отложенных публикаций контента
-- [ ] Голосовой ввод/вывод для арендаторов
-- [ ] Подключение эквайринга для оплаты аренды прямо в чате
+- [ ] Интеграция с CRM (Bitrix24 / AmoCRM)
+- [ ] Панель администратора с аналитикой
+- [ ] Шедулер отложенных публикаций
+- [ ] Голосовой ввод/вывод
+- [ ] Подключение эквайринга
 
 ---
 
 ## 👤 Автор
 
 **Разработчик**: Руслан  
-📞 +7 (991) 635-09-77
-📞 +7 (916) 734-01-04
-📧 rus482426@gmail.com
-📧 7340104@gmail.com 
+📞 +7 (991) 635-09-77 | +7 (916) 734-01-04  
+📧 rus482426@gmail.com  
 🔗 [GitHub Profile](https://github.com/Ruslan-promt-engineer)
 
-> Проект разработан в рамках обучения автоматизации бизнес-процессов с помощью ИИ.  
-> Готов к масштабированию и внедрению на других объектах.
+> Проект разработан в рамках обучения автоматизации бизнес-процессов с помощью ИИ.
 
 ---
 
